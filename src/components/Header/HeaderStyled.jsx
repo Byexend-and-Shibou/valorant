@@ -2,8 +2,8 @@ import styled from "styled-components"
 
 export const Container = styled.div`
     width: 100%;
-    height: 65px;
-    background-color: #1F2326;
+    height: 80px;
+    background-color: #171718;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -29,6 +29,8 @@ export const NavMenuText = styled.div`
     color: #fff;
     text-transform: uppercase;
     cursor: pointer;
+    font-size:14px;
+    font-weight: 700;
 `
 export const User = styled.div`
     width: 170px;
@@ -45,6 +47,9 @@ export const UserImage = styled.div`
 export const UserName = styled.div`
     color: #fff;
     font-size: 14px;
-    font-weight: bold;
-    &:svg{margin-left: 10px}
+    font-weight: 700;
+    text-transform: uppercase;
+    svg{
+        margin-left: 18px;
+    }
 `
