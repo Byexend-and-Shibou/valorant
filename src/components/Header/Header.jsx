@@ -1,5 +1,5 @@
 import {Logo, Riot} from "../../assets/svg/SvgImporter"
-import {Container, NavLogo, Dash} from './HeaderStyled'
+import {Container, NavLogo, Dash, NavMenu, NavMenuText} from './HeaderStyled'
 const Header = () => {
     const NavEl = ["Game", "Champions", "News", "Patch Notes", "Discover", "Esports", "Universe", "Shop", "Support"]
     return(
@@ -9,6 +9,11 @@ const Header = () => {
             <Dash/>
             <Logo/>
             </NavLogo>
+            <NavMenu>
+            {NavEl.map((el) => (
+                   <NavMenuText onClick={() => window.location.href="https:/" + `${el}` + ".com"}>{el}</NavMenuText>
+            ))}
+            </NavMenu>
         </Container>
     )
 }
