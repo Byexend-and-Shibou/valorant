@@ -1,17 +1,22 @@
 import { useEffect, useState } from "react";
-import { MainWrapper, Bg, AgentsContainer, AgentsName, AgentsCountry } from "./MainStyled";
+import {
+  MainWrapper,
+  Bg,
+  AgentsContainer,
+  AgentsName,
+  AgentsCountry,
+} from "./MainStyled";
+import Agents from "../../data/Agent";
 const Main = () => {
   return (
     <MainWrapper>
       <Bg>
-        <AgentsContainer>
-          {/* <AgentsName>
-            Pheonix
-          </AgentsName> */}
-          <AgentsCountry>
-            United Kingdom
-          </AgentsCountry>
-        </AgentsContainer>
+        {Agents.map((el) => (
+          <AgentsContainer>
+            <AgentsName>{el.name}</AgentsName>
+            <AgentsCountry>{el.country}</AgentsCountry>
+          </AgentsContainer>
+        ))}
       </Bg>
     </MainWrapper>
   );

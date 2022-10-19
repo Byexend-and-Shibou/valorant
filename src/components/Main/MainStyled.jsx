@@ -20,14 +20,26 @@ export const AgentsContainer = styled.div`
   background: linear-gradient(0deg, rgba(31,35,38,1) 0%, rgba(51,51,51,1) 100%);
   border-top-left-radius: 10px;
 `
-export const AgentsName = styled.p`
-  
+
+export const AgentsName = styled.div`
+color: #ffffff;
+  font-weight: 500;
+  font-size: 72px;
+  transform-origin: left;
+  transform: rotate(90deg);
+  line-height: 93px;
+  text-align: center;
+  display: flex;
 `
-export const AgentsCountry = styled.p`
+export const AgentsCountry = styled.div`
   color: #FF4656;
   font-weight: 500;
   font-size: 24px;
-  transform-origin: center;
+  transform-origin: left;
   transform: rotate(90deg);
   text-align: center;
+  margin-left: 50px;
+  display: flex;
+  margin-top: -60px;
+  line-height: 31px;
 `
