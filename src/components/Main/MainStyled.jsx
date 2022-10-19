@@ -7,13 +7,14 @@ export const MainWrapper = styled.div`
   position: relative;
 `
 export const Bg = styled.div`
-  width: 100vw;
-  height: 100vh;
-  background-image:"../../assets/image/bg.jpg";
+  width: 100%;
+  height: 100%;
+  background: url(${BG});
+  background-size: cover;
 `
 export const AgentsContainer = styled.div`
-  height: 990px;
-  width: 440px;
-  background-color: #1F2326;
+  height: 700px;
+  width: 350px;
+  background: linear-gradient(0deg, rgba(31,35,38,1) 0%, rgba(51,51,51,1) 100%);
   border-top-left-radius: 10px;
 `

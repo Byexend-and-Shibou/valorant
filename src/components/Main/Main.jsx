@@ -4,7 +4,6 @@ const Main = () => {
   return (
     <MainWrapper>
       <Bg>
-
         <AgentsContainer />
       </Bg>
     </MainWrapper>
