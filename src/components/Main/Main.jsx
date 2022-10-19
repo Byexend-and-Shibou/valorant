@@ -1,10 +1,17 @@
 import { useEffect, useState } from "react";
-import { MainWrapper, Bg, AgentsContainer } from "./MainStyled";
+import { MainWrapper, Bg, AgentsContainer, AgentsName, AgentsCountry } from "./MainStyled";
 const Main = () => {
   return (
     <MainWrapper>
       <Bg>
-        <AgentsContainer />
+        <AgentsContainer>
+          {/* <AgentsName>
+            Pheonix
+          </AgentsName> */}
+          <AgentsCountry>
+            United Kingdom
+          </AgentsCountry>
+        </AgentsContainer>
       </Bg>
     </MainWrapper>
   );
