@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
-import BG from "../../assets/image/bg.jpg";
-import { MainWrapper, Bg, Overlay} from "./MainStyled";
+import { MainWrapper, Bg, AgentsContainer } from "./MainStyled";
 const Main = () => {
   return (
     <MainWrapper>
       <Bg>
-        <img src={BG}/>
-        <Overlay/>
+
+        <AgentsContainer />
       </Bg>
     </MainWrapper>
   );
