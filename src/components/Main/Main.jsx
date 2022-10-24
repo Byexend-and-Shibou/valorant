@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import {
+  TitleText,
   MainWrapper,
   Bg,
   AgentsContainer,
@@ -11,6 +12,9 @@ const Main = () => {
   return (
     <MainWrapper>
       <Bg>
+        <TitleText>
+          Agents
+        </TitleText>
         {Agents.map((el) => (
           <AgentsContainer>
             <AgentsName>{el.name}</AgentsName>
