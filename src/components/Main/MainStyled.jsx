@@ -15,12 +15,13 @@ export const Bg = styled.div`
   justify-content: center;
 `
 export const TitleText = styled.div`
-  height: 600px;
+  font-family: 'Druk-Wide-Bold';
+  height: 300px;
   width: 100px;
   color: #fff;
   text-transform: uppercase;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px;
+  -webkit-text-stroke: 1.5px;
   font-weight: 500;
   font-size: 100px;
   transform: rotate(90deg);
@@ -30,6 +31,7 @@ export const TitleText = styled.div`
   align-items: center;
 `
 export const AgentsContainer = styled.div`
+  border: 2px solid #1F2326;
   margin-left: 72px;
   margin-top: 113px;
   height: 700px;
@@ -37,8 +39,8 @@ export const AgentsContainer = styled.div`
   background: linear-gradient(0deg, rgba(31,35,38,1) 0%, rgba(51,51,51,1) 100%);
   border-top-left-radius: 30px;
 `
-
 export const AgentsName = styled.div`
+  font-family: 'Druk-Wide-Bold';
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
   -webkit-text-stroke: 2px;
@@ -52,9 +54,7 @@ export const AgentsName = styled.div`
   display: flex;
 `
 export const AgentsCountry = styled.div`
-  -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
-  -webkit-text-stroke: 0.3px;
+  font-family: 'Druk-Wide-Bold';
   color: #FF4656;
   font-weight: 500;
   font-size: 24px;
@@ -65,4 +65,12 @@ export const AgentsCountry = styled.div`
   display: flex;
   margin-top: -60px;
   line-height: 31px;
+`
+export const Abilities = styled.div`
+  margin-left: 72px;
+  margin-top: 113px;
+  height: 110px;
+  width: 380px;
+  background: #1F2326;
+  border: 2px solid #fff;
 `
