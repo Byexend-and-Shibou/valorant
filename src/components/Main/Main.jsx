@@ -5,6 +5,7 @@ import {
   AgentsContainer,
   AgentsName,
   AgentsCountry,
+  Abilities,
 } from "./MainStyled";
 import Agents from "../../data/Agent";
 const Main = () => {
@@ -20,6 +21,7 @@ const Main = () => {
           <AgentsContainer onClick={hundleClick}>
             <AgentsName>{el.name}</AgentsName>
             <AgentsCountry>{el.country}</AgentsCountry>
+            <Abilities/>
           </AgentsContainer>
         ))}
       </Bg>
