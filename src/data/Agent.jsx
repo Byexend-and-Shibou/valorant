@@ -1,21 +1,21 @@
 const Agents = [
     {
-        id: 1,
+        id: 0,
         name: 'PHOENIX',
         country: 'United Kingdom'
     },
     {
-        id: 2,
+        id: 1,
         name: 'JETT',
         country: 'South Korea'
     },
     {
-        id: 3,
+        id: 2,
         name: 'SOVA',
         country: 'Russia'
     },
     {
-        id: 4,
+        id: 3,
         name: 'SAGE',
         country: 'China'
     },
