@@ -6,22 +6,31 @@ import {
   AgentsName,
   AgentsCountry,
   Abilities,
+  AbilitiesContainer,
+  SvgAbilities
 } from "./MainStyled";
 import Agents from "../../data/Agent";
 const Main = () => {
-  const [click, setClick] = useState(false);
-  const hundleClick = (e) => {
+  const [click, setClick] = useState(false)
+  const hundleClick = (e, i) => {
     setClick(!click);
-    click ? e.currentTarget.style.background = 'white' : e.currentTarget.style.background = 'linear-gradient(0deg, rgba(31,35,38,1) 0%, rgba(51,51,51,1) 100%)';
+    click ? e.currentTarget.style.background = 'white' : e.currentTarget.style.background = 'linear-gradient(0deg, rgba(31,35,38,1) 0%, rgba(51,51,51,1) 100%)'
+    // if(click && i !== e.currentTarget){
+    //   e.currentTarget.style.background = 'linear-gradient(0deg, rgba(31,35,38,1) 0%, rgba(51,51,51,1) 100%)'
+    // }
   }
   return (
     <MainWrapper>
       <Bg>
-        {Agents.map((el) => (
+        {Agents.map((el, i) => (
           <AgentsContainer onClick={hundleClick}>
             <AgentsName>{el.name}</AgentsName>
             <AgentsCountry>{el.country}</AgentsCountry>
-            <Abilities/>
+            <AbilitiesContainer>
+            <Abilities>
+              <SvgAbilities src={el.skils}></SvgAbilities>
+            </Abilities>
+            </AbilitiesContainer>
           </AgentsContainer>
         ))}
       </Bg>

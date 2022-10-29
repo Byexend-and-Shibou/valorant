@@ -66,11 +66,22 @@ export const AgentsCountry = styled.div`
   margin-top: -60px;
   line-height: 31px;
 `
+export const AbilitiesContainer = styled.div`
+position: relative;
+display: flex;
+flex-direction: column;
+height: 100%;
+flex-direction: column-reverse;
+`
 export const Abilities = styled.div`
-  margin-left: 72px;
+  margin-left: 20px;
   margin-top: 113px;
   height: 110px;
   width: 380px;
   background: #1F2326;
   border: 2px solid #fff;
+`
+export const SvgAbilities = styled.img`
+  display: flex;
+  justify-content: space-between;
 `

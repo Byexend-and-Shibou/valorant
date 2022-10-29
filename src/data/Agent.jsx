@@ -1,8 +1,23 @@
+import {Phoenix_Abilities0, Phoenix_Abilities1, Phoenix_Abilities2, Phoenix_Abilities3} from '../assets/svg/SvgImporter'
 const Agents = [
     {
         id: 0,
         name: 'PHOENIX',
-        country: 'United Kingdom'
+        country: 'United Kingdom',
+        skils: [
+            {
+            Phoenix_Abilities0
+        },
+        {
+            Phoenix_Abilities1
+        },
+        {
+            Phoenix_Abilities2
+        },
+        {
+            Phoenix_Abilities3
+        },
+        ]
     },
     {
         id: 1,
